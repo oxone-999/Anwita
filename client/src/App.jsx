@@ -34,9 +34,10 @@ function App() {
           follow your passion you can. You can do everything and anything I
           won't restrict you in anyway. This was just inside and I wanted to
           throw it out. It's your decision. Finally what you will say I will
-          accept it.because in my mind there won't be any
-          regrets that after so long I got a person who understands me, who cares about, who
-          understands my passion. I Really Care For You, I can do anything for you. PLEASE.
+          accept it.because in my mind there won't be any regrets that after so
+          long I got a person who understands me, who cares about, who
+          understands my passion. I Really Care For You, I can do anything for
+          you. PLEASE.
         </p>
         {hovered === "yes" ? (
           <>
@@ -57,12 +58,6 @@ function App() {
             onMouseLeave={() => setHovered(null)}
           >
             Yes
-          </button>
-          <button
-            onMouseEnter={() => setHovered("no")}
-            onMouseLeave={() => setHovered(null)}
-          >
-            No
           </button>
         </div>
       </div>
