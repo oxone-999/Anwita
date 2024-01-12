@@ -35,8 +35,8 @@ function App() {
           won't restrict you in anyway. This was just inside and I wanted to
           throw it out. It's your decision. Finally what you will say I will
           accept it.because in my mind there won't be any
-          regrets that after so long I got a person who understands me, who
-          understands my passion and I also understands her's.
+          regrets that after so long I got a person who understands me, who cares about, who
+          understands my passion. I Really Care For You, I can do anything for you. PLEASE.
         </p>
         {hovered === "yes" ? (
           <>
