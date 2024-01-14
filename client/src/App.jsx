@@ -38,7 +38,8 @@ function App() {
           long I got a person who understands me, who cares about, who
           understands my passion. I Really Care For You, I can do anything for
           you. PLEASE.
-
+  </p>
+        <p>
           <strong>Please Just Give me Once Chance, I will make it work. Tum jitna attention 
           mangogi mai utna dunga. Tum jo bologi mai tumko vo dilaunga. Mai Tumhari 
           har wish puri karne ke liye taiyaar hu. I know this long distance will work.
