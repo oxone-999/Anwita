@@ -21,13 +21,24 @@
   align-items: center;
 }
 
-.button button{
-  background-color: #ff624a;
-  color: white;
-}
-
 img{
   width: 15rem;
   height: 15rem;
   object-fit: cover;
+}
+
+button{
+  border: none;
+}
+
+button:active {
+  border: none;
+}
+
+button:hover{
+  border: none;
+}
+
+button:after, ::before{
+  border: none;
 }
