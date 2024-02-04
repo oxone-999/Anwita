@@ -39,18 +39,21 @@ function App() {
           <div className="button">
             <button
               style={{
-                backgroundColor: "#50C878",
-                width: `${size}rem`,
-                height: `${size}rem`,
+                backgroundColor: "transparent",
               }}
               onClick={() => {
                 setGif(videoUrl);
                 setYes(true);
               }}
             >
-              <p style={{ width: `${size}rem`, height: `${size}rem` }}>Yes</p>
+              <p style={{ fontSize: `${size * 7}px`, color: "green" }}>Yes</p>
             </button>
-            <button onClick={handleNo}>{No_list[index]}</button>
+            <button
+              style={{ backgroundColor: "red", color: "white" }}
+              onClick={handleNo}
+            >
+              {No_list[index]}
+            </button>
           </div>
         )}
         {yes && (
@@ -65,3 +68,4 @@ function App() {
 }
 
 export default App;
+
