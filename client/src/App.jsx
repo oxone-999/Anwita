@@ -56,12 +56,6 @@ function App() {
             </button>
           </div>
         )}
-        {yes && (
-          <>
-            <img src={idleGif} />
-            <h2>Please Give Me Your Address</h2>
-          </>
-        )}
       </div>
     </>
   );
