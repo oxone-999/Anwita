@@ -20,7 +20,7 @@ function App() {
     "Yes",
   ];
 
-  const handleNo = () => {
+  const handleNo = ( => {
     if (index < No_list.length - 1) {
       setIndex(index + 1);
       setSize(size + 2);
