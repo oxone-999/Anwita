@@ -20,7 +20,7 @@ function App() {
     "Yes",
   ];
 
-  const handleNo = ( => {
+  const handleNo = () => {
     if (index < No_list.length - 1) {
       setIndex(index + 1);
       setSize(size + 2);
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <div className="main">
-        <h2>Varshita !! Will you be my Girlfriend ?</h2>
+{/*         <h2>Varshita !! Will you be my Girlfriend ?</h2>
         <img src={gif} />
         {!yes && (
           <div className="button">
@@ -55,7 +55,7 @@ function App() {
               {No_list[index]}
             </button>
           </div>
-        )}
+        )} */}
       </div>
     </>
   );
