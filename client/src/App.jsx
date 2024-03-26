@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <div className="main">
-        <h2>Will you be my Valentine ?</h2>
+        <h2>Varshita !! Will you be my Girlfriend ?</h2>
         <img src={gif} />
         {!yes && (
           <div className="button">
