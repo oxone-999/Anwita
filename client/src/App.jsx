@@ -33,7 +33,9 @@ function App() {
   return (
     <>
       <div className="main">
-        <h2>Anwita !! Will you be my Girlfriend ?</h2>
+        {!yes ? (<h2>Anwita !! Will you be my Girlfriend ?</h2>) : (
+          <h2>Yayyyyyyy! I LOVE YOU BABYYYYY!!</h2>
+        )}
         <img src={gif} />
         {!yes && (
           <div className="button">
