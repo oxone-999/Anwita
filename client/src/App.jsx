@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import idleGif from "/videos/please-cute.gif";
 import videoUrl from "/videos/bubududu-panda.gif";
+import CountDown from "./CountDown.jsx"
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
       <div className="main">
-        {!yes ? (<h2>Anwita !! Will you be my Girlfriend ?</h2>) : (
+        {/* {!yes ? (<h2>Anwita !! Will you be my Girlfriend ?</h2>) : (
           <h2>Yayyyyyyy! I LOVE YOU BABYYYYY!!</h2>
         )}
         <img src={gif} />
@@ -54,10 +55,12 @@ function App() {
               style={{ backgroundColor: "red", color: "white" }}
               onClick={handleNo}
             >
-              {No_list[index]}
+              {No_list[index]}JM+
             </button>
           </div>
-        )}
+        )} */}
+
+        <CountDown />
       </div>
     </>
   );
