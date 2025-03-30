@@ -29,22 +29,22 @@ export default function CountdownApp() {
   }, []);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px', backgroundColor: '#1a1a1a', color: 'white', height: '100vh', justifyContent: 'center' }}>
-      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '20px' }}>Countdown to New Year</h1>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px', textAlign: 'center' }}>
-        <div style={{ padding: '10px', backgroundColor: '#333', borderRadius: '8px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px', backgroundColor: 'none', color: 'black', height: 'auto', justifyContent: 'center' }}>
+      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '20px' }}>Countdown to Meet you</h1>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px', textAlign: 'center', color: "black" }}>
+        <div style={{ padding: '10px', backgroundColor: '#ffdff1', borderRadius: '8px' }}>
           <h2 style={{ fontSize: '1.5rem' }}>{timeLeft.days}</h2>
           <p>Days</p>
         </div>
-        <div style={{ padding: '10px', backgroundColor: '#333', borderRadius: '8px' }}>
+        <div style={{ padding: '10px', backgroundColor: '#ffdff1', borderRadius: '8px' }}>
           <h2 style={{ fontSize: '1.5rem' }}>{timeLeft.hours}</h2>
           <p>Hours</p>
         </div>
-        <div style={{ padding: '10px', backgroundColor: '#333', borderRadius: '8px' }}>
+        <div style={{ padding: '10px', backgroundColor: '#ffdff1', borderRadius: '8px' }}>
           <h2 style={{ fontSize: '1.5rem' }}>{timeLeft.minutes}</h2>
           <p>Minutes</p>
         </div>
-        <div style={{ padding: '10px', backgroundColor: '#333', borderRadius: '8px' }}>
+        <div style={{ padding: '10px', backgroundColor: '#ffdff1', borderRadius: '8px' }}>
           <h2 style={{ fontSize: '1.5rem' }}>{timeLeft.seconds}</h2>
           <p>Seconds</p>
         </div>
