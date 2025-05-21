@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(255, 196, 225);
+  background-color: rgb(255, 218, 236);
 }
 
 .logo {
@@ -83,12 +83,12 @@
 
 @media screen and (max-width: 768px) {
   .item{
-    width: 4rem;
+    width: 9rem;
     height: 3rem;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: #500029;
     font-weight: 500;
-    background-color: #ffa3d0;
+    background-color: #ffbadb;
   }
   
 }
