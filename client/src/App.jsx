@@ -196,6 +196,12 @@ function App() {
       image:
         "https://www.cookwithmanali.com/wp-content/uploads/2018/10/Kaju-Katli-Recipe.jpg",
     },
+    {
+      id: 33,
+      dish: "Orbit mint sugar free",
+      image:
+        "https://www.cookwithmanali.com/wp-content/uploads/2018/10/Kaju-Katli-Recipe.jpg",
+    },
   ];
 
   const Flowers = [
