@@ -1,0 +1,100 @@
+.cake-container {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(#fbe9e7, #ffccbc);
+  overflow: hidden;
+  cursor: none;
+}
+
+.knife-button {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  width: 60px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.knife {
+  position: absolute;
+  width: 80px;
+  height: auto;
+  pointer-events: none;
+  z-index: 20;
+  transition: transform 0.1s;
+}
+
+.cake-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cake {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.5s;
+}
+
+.cutting .cake {
+  transform: scale(0.95) rotate(-2deg);
+  filter: brightness(0.9);
+}
+
+.happy-message {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff4081;
+  text-shadow: 0 0 10px #fff;
+  z-index: 999;
+}
+
+
+.cake-slice-container {
+  position: relative;
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cake-half {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  transition: transform 1s ease, opacity 1s ease;
+  clip-path: inset(0 50% 0 0); /* start with left side */
+}
+
+.cake-half.right {
+  clip-path: inset(0 0 0 50%); /* right half */
+  left: 74px;
+}
+
+.sliced .cake-half.left {
+  transform: translateX(-160px) rotate(-8deg);
+  opacity: 0.95;
+}
+
+.sliced .cake-half.right {
+  transform: translateX(160px) rotate(8deg);
+  opacity: 0.95;
+}
+
+.cake-name {
+  position: relative;
+  top: 240px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  z-index: 2;
+}

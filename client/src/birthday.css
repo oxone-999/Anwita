@@ -1,0 +1,81 @@
+/* Main Container */
+.birthday-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, #fcddec, #d9c6f3);
+}
+
+/* Card Container */
+.card-wrapper {
+  position: relative;
+  width: 320px;
+  height: 400px;
+}
+
+/* Paper Card */
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Paper-style appearance */
+.paper { 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Image */
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* Text */
+.card-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.final-text {
+  font-size: 1.5rem;
+  color: #d63384;
+  font-weight: bold;
+}
+
+/* Hint */
+.note-hint {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 0.5rem;
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-export default function CountdownApp() {
-  const targetDate = new Date('2025-04-04T10:00:00');
+export default function CountdownApp({title, date, setClose = null}) {
+  const targetDate = new Date(date);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -16,6 +16,7 @@ export default function CountdownApp() {
 
       if (difference <= 0) {
         clearInterval(timer);
+        setClose(true);
       } else {
         setTimeLeft({
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -30,7 +31,7 @@ export default function CountdownApp() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px', backgroundColor: 'none', color: 'black', height: 'auto', justifyContent: 'center' }}>
-      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '20px' }}>Countdown to Meet you</h1>
+      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '20px' }}>{title}</h1>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px', textAlign: 'center', color: "black" }}>
         <div style={{ padding: '10px', backgroundColor: '#ffdff1', borderRadius: '8px' }}>
           <h2 style={{ fontSize: '1.5rem' }}>{timeLeft.days}</h2>
