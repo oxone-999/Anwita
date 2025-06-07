@@ -22,7 +22,7 @@ function App() {
         <h1>My Lovely Girlfriend : Anwi</h1>
       </div>
       
-      {/* {close ? (
+      {close ? (
         <CakeCutting />
       ) : (
         <CountdownApp
@@ -30,7 +30,7 @@ function App() {
           date="2025-06-08T00:00:00"
           setClose={setClose}
         />
-      )} */}
+      )}
       <CountdownApp title="Until we meet" date="2025-06-10T00:00:00" />
 
       <div className="section">
