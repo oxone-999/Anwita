@@ -13,16 +13,45 @@ import {
   dislikes,
   Hobbies,
 } from "./data";
+import styles from "./pass.module.css";
+
+const STATIC_PASSWORD = "ANUJ";
 
 function App() {
   const [close, setClose] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [input, setInput] = useState("");
+
+  const handleLogin = () => {
+    if (input === STATIC_PASSWORD) {
+      setIsAuthenticated(true);
+    } else {
+      alert("Incorrect password");
+    }
+  };
+  if (!isAuthenticated) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.card}>
+          <h2>Enter Password</h2>
+          <input
+            type="password"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Password"
+          />
+          <button onClick={handleLogin}>Submit</button>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="main">
       <div className="profile">
         <h1>My Lovely Girlfriend : Anwi</h1>
       </div>
-      
-      {close ? (
+
+      {/* {close ? (
         <CakeCutting />
       ) : (
         <CountdownApp
@@ -30,7 +59,7 @@ function App() {
           date="2025-06-08T00:00:00"
           setClose={setClose}
         />
-      )}
+      )} */}
       <CountdownApp title="Until we meet" date="2025-06-10T00:00:00" />
 
       <div className="section">
