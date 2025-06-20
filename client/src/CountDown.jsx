@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 export default function CountdownApp({ title, setClose = null }) {
+  return;
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,

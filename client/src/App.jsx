@@ -54,11 +54,11 @@ function App() {
 
       <LiveTogetherTimer />
 
-      {/* <CountdownApp
+      <CountdownApp
         title="MontheVersary"
         date="2025-06-21T00:00:00"
         setClose={setClose}
-      /> */}
+      />
 
       <div className="section">
         <h2> Favourite Dishes and Food </h2>
