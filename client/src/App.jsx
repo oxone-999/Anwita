@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import LiveTogetherTimer from "./liveTimer";
 import "./App.css";
 import CakeCutting from "./CakeCutting";
 import CountdownApp from "./CountDown";
@@ -51,16 +52,13 @@ function App() {
         <h1>My Lovely Girlfriend : Anwi</h1>
       </div>
 
-      {/* {close ? (
-        <CakeCutting />
-      ) : (
-        <CountdownApp
-          title="Birthday Countdown"
-          date="2025-06-08T00:00:00"
-          setClose={setClose}
-        />
-      )} */}
-      <CountdownApp title="Until we meet" date="2025-06-10T00:00:00" />
+      <LiveTogetherTimer />
+
+      <CountdownApp
+        title="MontheVersary"
+        date="2025-06-21T00:00:00"
+        setClose={setClose}
+      />
 
       <div className="section">
         <h2> Favourite Dishes and Food </h2>
