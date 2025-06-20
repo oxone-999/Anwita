@@ -47,13 +47,6 @@ export default function CountdownApp({ title, setClose = null }) {
         });
       }
 
-      // ⏱ Live Together Timer
-      const diffTogether = now.getTime() - startDate.getTime();
-      const days = Math.floor(diffTogether / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diffTogether / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diffTogether / 1000 / 60) % 60);
-      const seconds = Math.floor((diffTogether / 1000) % 60);
-
     }, 1000);
 
     return () => clearInterval(timer);
@@ -64,9 +57,9 @@ export default function CountdownApp({ title, setClose = null }) {
       <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '20px' }}>{title}</h1>
 
       {isToday21st ? (
-        <div style={{ color: 'red', fontSize: '1.5rem', fontWeight: 'bold' }}>
+        {/* <div style={{ color: 'red', fontSize: '1.5rem', fontWeight: 'bold' }}>
           🎉 Happy MontheVersary baby ❤️❤️❤️ 🎉
-        </div>
+        </div> */}
       ) : (
         <div style={{
           display: 'grid',
